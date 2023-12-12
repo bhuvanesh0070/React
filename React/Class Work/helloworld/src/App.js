@@ -1,11 +1,13 @@
-import Sample from "./Sample"
-import './App.css'
-function App(){
+import React from 'react';
+import Login from './Login';
+
+function App() {
   return (
     <div>
-      <Sample/>
-       <h1>Hello World!</h1>
+     className="App">
+      <Login />
     </div>
   );
 }
+
 export default App;

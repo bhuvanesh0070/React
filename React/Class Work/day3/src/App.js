@@ -1,14 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-import ClassComponents from './component/ClassComponent';
-import FunctionalComponent from './component/functionalComponent';
+import"./App.css";
+import childClass from "./component/childComponent";
+import childComponent from "./component/childComponent";
 function App() {
+  const msg="Hi from parent component-app";
+  const msg1="Hi from parent component class"
   return (
-    <div>
-      <ClassComponents>
-
-      </ClassComponents>
-      <FunctionalComponent></FunctionalComponent>
+    <div className="App">
+        <childComponent>
+          <childClass message={msg1}/>
+        </childComponent>
     </div>
   )
 }
